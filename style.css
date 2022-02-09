@@ -1,0 +1,133 @@
+
+
+
+.bigdiv{
+  background-color: rgba(114, 97, 77, 0.466);
+    width: 100%;
+    height: 880px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftdiv{
+
+    /* background-color: brown; */
+    width: 24%;
+    height: 880px;
+}
+
+.maindiv{
+    /* background-color: rgb(77, 174, 253); */
+    width: 100%;
+    height: 880px;
+
+}
+.profil{
+/* background-color: blue; */
+    width: 35%;
+    height: 12.5%;
+margin-left: 30%;
+}
+
+.foto{
+    
+    width: 70px;
+    height: 70px;
+border-radius: 100%;
+}
+
+
+
+
+
+
+
+.table2{
+    width: 800px;
+    height: 200px;
+    border:5px solid black;
+
+}
+.table1{
+    border:1px solid black;
+
+}
+
+.waiting{
+    margin-top: 15px;
+    width: 90%;
+    height: 110px;
+    /* background-color: red; */
+    border-radius: 3%;
+}
+
+.time{
+    /* background-color: chartreuse; */
+    width: 7%;
+    height: 70px;
+    margin-left: 100%;
+    border-radius: 3%;
+
+}
+.waiting_p{
+position: relative;
+bottom: 70px;
+font-size: 10px;
+
+}
+.tablediv{
+    /* background-color: darkorange; */
+    height: 300px;
+    width: 100%;
+
+}
+.datatime{
+display: flex;
+
+margin-left: 20px;
+border-radius: 10px;
+border: none;
+}
+.divplace{
+/* background-color: burlywood; */
+height: 50%;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -144px;
+
+}
+.place{
+    display: flex;
+   
+}
+.p_probel{
+    margin-left: 10%;
+}
+.input_probel{
+    margin-left: 15%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+}
+.p_position{
+font-size: 25px;
+
+}
+.divadd
+{
+    margin-top: -15px;
+    margin-left: 89%;
+    display: flex;
+    width: 10%;
+    height: 60px;
+    /* background-color: yellow; */
+}
+.divaddfoto
+{
+    margin-left: 80%;
+    display: flex;
+    margin-top: -50px;
+    width: 20%;
+    height: 60px;
+    /* background-color: yellow; */
+}

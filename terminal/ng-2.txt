@@ -1,0 +1,61 @@
+import { Component, OnInit } from '@angular/core';
+import { MyObject, MyObject1, MyObject2 } from 'src/app/interface';
+
+
+
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  // template: `
+  //   <div> html content</div>
+  // `,
+  styleUrls: ['./header.component.css']
+  //   styles: [`
+  //     p {
+  //       color: green;
+  //     }
+  //  `]
+})
+export class HeaderComponent {
+  //myNumber:numner; => define em anum property
+  myNumber: number=0; //=> = 0  initialize
+  myString: string = 'Hello';
+  myBoolean: boolean = false;
+
+  myObject: MyObject = { firstName: 'Lilit', age: 26 };
+  myObj2: MyObject1 = new MyObject1();
+  myObj3: MyObject2 = new MyObject2('Lilit', 26);
+
+  myArray: Array<number> = [5];
+  myArray1: Array<string> = ['5'];
+  myArray2: Array<boolean> = [true];
+  myArray3: Array<number | string | boolean> = [5, 'hjghjvh', true];
+  myArray4: Array<MyObject> = [{ firstName: 'Lilit', age: 26 }];
+  myArray5: MyObject[] = [{ firstName: 'Lilit', age: 26 }];
+
+  constructor() { }
+
+  getdata() {
+    //this.myNumber = 'dvsvsdvsd';
+    this.myNumber = 100;
+    console.log(this.myNumber);
+
+  }
+}
+
+//<app-header></app-header>
+//{myNumber:0, constructor:()=>{}}
+
+
+
+
+------------------------------
+Ays karc hramannerov stexcvum en hamapatasxan codi ktorner@
+ng g c compoinentName
+ng g m moduleName
+ng g s serviceName
+ng g p pipeName
+ng g i interfaceName
+ng g d directiveName
+design pattern

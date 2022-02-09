@@ -1,0 +1,28 @@
+1 npm install -g @angular/cli
+(install enq anum cli)
+
+
+2 ng new projectName
+(sarqum e proekt@ ir bolor filerov)
+
+3 npm start
+(run e anum proekt@)
+
+4 Decoratorner en (srancov asum enq browserin te inchpes petq e compile ani codi tvyal hatvac@)
+
+@NgModule   (conteiner e, vortec miavorvum en mimiyanc het kapvac componentner@)
+@Component  (codi arandzin amboxjakan hatvac e inchpes orinak karusel@, menun, sidebar@ ev ayl)
+@Injectable (servisner en, voronq ognum en tvyalner@ mi componentic poxancen myus@ ev backic datan stanum en)
+@Pipe       (metodner en voronq vorpes argument vercnum en datan, dzevapoxum en ev veradarznum dzevapoxvac datan )
+@Directive  (karavarum en html-um katarvox popoxutyunner@)
+
+
+
+
+
+
+gid bash 
+ng new 
+cd project 
+npm install
+npm start 

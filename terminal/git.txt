@@ -1,0 +1,87 @@
+HRAMANNER
+clear
+git init 
+git add .
+git add index.html
+git status 
+git commit -m ""
+git rm --cached index.html
+ng new my-sassy-app --style=scss
+
+
+git clone link 
+git pull 
+git branch
+git branch anun
+git checkout anun 
+git branch -d anun
+git merge anun
+git config --global user.name
+git config --global user.email
+
+
+U-chi hetevum terminal@ petq e arvi (add .) 
+A-hetevum e terminal@ 
+M-ka popoxutyun chpahpanvac (petq e cmmit anenq )
+
+git init --git inilizacya e anum (gitin stipuma hetevel popoxutyunnerin)
+git add . -- ( jnjuma u tar@ sarqum A    gitum kavelacni sax fayler@ ...git@ khetevi dran ) 
+git add index.html -- (gitum kavelacni index html fayl@ ...git@ khetevi dran  )
+git status -- (cuych e talis te inch kargavijak uni mer fayl@)
+git commit -m "stex grum enq namak en masin te inchenq poxe"   --(pahpanum enq enqan@ inch arelenq kodum ev kisvum githubum)
+clear -- maqrum e terminali grac@ hramanner@ chi korum uxaki terminal@ maqrvum e 
+git rm --cached index.html   (index html@ darcnume antrecer (untrecer (A-ic sarquma U-i)\\ aysinqn sksuma git@ chetevel sran))
+///kanon petqe demic sarqenq trecet aysinqn git add . anenq nor git commit
+ANCANOT BARER
+__untrack-chetevel__
+__track--hetevel__
+__modified--popoxutyu ka (aysinqn petq e git add . arvi heto git cmmit "")__
+__repasitoria--pahest__
+__branch--jux__
+//////karevor/////////////uzum enq  fayler linen vor git@ chetevi dranc bayc enpes vor amen angam chasi vor dranc untrack en --stexcum enq file anun@ drvuma .gitignore  
+heto add enq anum isk heto commit
+mi fayl el enq stexcum snun@ grvuma errors.txt ___sra mej kan erorner
+.gitignore faili mej kgrenq errors.txt---es depqum error.txt-i masin el chenq lsi ir erornerov handes 
+ nuyn@ papkai depqum a ashxatum uxaki et jamanak /papkaianun@  kgrenq gitignore file mej
+ verjum git add . --git cmmit"" /////////////////  
+
+git clone link --es hramanaoc qashum enq repositorian vor@ uzum enq dra link@ dnum enq
+git pull ----(clon aneluc heto nor avelacac fayler@ beruma (sench asac abnavita anum nor versia ))
+git branch _______(stugume qani branch ka )
+git branch anun (stexcume branch )
+git checkout anun ---- (ktexapoxvi mer uzac brench (jux))
+git branch -d anun ___(jnjuma branch@)  
+git merge anun --(ayn branchi vra vori vra vor menq enq kkcvi en jux@ vori anun@ kgrenq )
+git config --global user.name "username(GRIGORSARUKHANYAN)"  ...(github akaunt mtnelu hamar )
+git config --global user.name ... sench kstugenq inch akaunta mtac (userneym@)
+git config --global user.email "gmail(grigor.saruxanyan1@gmail.ru)"   ...(sench mutqenq anum profil (gmail mas)) 
+git config --global user.email .. stugumenq profili gmail@
+
+git remote add anun HTTPlink6563+
+git branch -m master 
+git push -u anun branchianun (qcuma githube)
+git clon  ---qashuma githabic mer uqcac verjin@ 
+
+
+(skzbic)cd githubi filei anun@ (mtnum enq githab et anun@)
+git puul ---vorpesi ani verji tarmacum@
+
+
+ng new my-sassy-app --style=scss  ......cssi poxaren bacuma scss-ner, fayler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

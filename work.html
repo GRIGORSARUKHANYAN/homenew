@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  
+  <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+  <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- CSS only -->
@@ -12,6 +15,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="sfviewport" content="width=device-width, initial-scale=1.0">
     <title>Session</title>
+    <!-- fluent ui  -->
+    <link
+  rel="stylesheet"
+  href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+/>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="media1.css">
@@ -24,14 +33,17 @@
         
     </div>
    
-   
-   
-
 
 
     <div class="maindiv" id="maindiv" >
 
       <h2  >խորհրդի Նիստ  N-007</h2>
+      <fluent-switch  onclick="aper()" >
+        <span  slot="checked-message">On</span>
+        <span  slot="unchecked-message">Off</span>
+      </fluent-switch>
+      
+      <fluent-divider ></fluent-divider>
 <div class="tablediv" > 
  
  <div class="datatime" >
@@ -53,8 +65,8 @@
   <p  >Անցկացման վայրը</p>  
   <p class="p_probel"  > 7-րդ հարկի դահլիճ</p>  </div>
   <div class="place" >
-    <p  >այլ Նշումներ</p> 
-<input class="input_probel" type="text">
+    <p  >Այլ Նշումներ</p> 
+<fluent-text-area class="input_probel" placeholder="Այլ Նշումներ"  ></fluent-text-area>
 
   </div>
 

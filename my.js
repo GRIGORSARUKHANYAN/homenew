@@ -1,3 +1,15 @@
+// import { fluentButton, provideFluentDesignSystem } from '@fluentui/web-components';
+
+// const { fillColor } = require("@fluentui/web-components");
+
+// provideFluentDesignSystem().register(fluentButton());
+
+// import { allComponents, provideFluentDesignSystem } from '@fluentui/web-components';
+
+// provideFluentDesignSystem().register(allComponents);
+
+console.log("asa");
+
 let arrfoto = [1,2,3,4,5,6,7,8,8,8,8,8]
 let arrtext = ["Տնօրեն","Փոխտնորեն","Քարտուղար","Մենեջեր","Ինժիներ","Հաշվապահ",
 " Տեստավորող","Օպերատոր"]
@@ -52,6 +64,7 @@ for (let i = 0; i < arrnaem_lenght; i++) {
     <p class="waiting_p" >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
         ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+        <fluent-divider style="margin-top: 25px";  ></fluent-divider>
   </div> `
 
 

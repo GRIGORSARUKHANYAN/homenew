@@ -29,7 +29,6 @@ left.innerHTML += `<div class="profil" >
 if (secret_foto>0) {
   left.innerHTML += `
   <div class="divaddfoto" > 
-  
   <i  class="fa fa-chevron-circle-down" style="font-size:35px;color:red;margin: 5px; "></i>
    <H1>${secret_foto}</H1> </div>`
   
@@ -65,9 +64,29 @@ for (let i = 0; i < arrnaem_lenght; i++) {
 }
 if (secret_question>0) {
 waiting1.innerHTML += `
-<div class="divadd" > 
+<button class="divadd" >
+<div id="divadd"  > 
 <i  class="fa fa-chevron-circle-down" style="font-size:35px;color:red;margin: 5px; "></i>
-<H1>${secret_question}</H1> </div>`
+<span class="divadd_span" >${secret_question}</span> </div>
+</button>`
 
 }
+function addfoto() {
+  
+}
+// porcarkum\
+function addfoto() {
+  waiting1.innerHTML += `
+  <div class="add-fotoclick"   >
+       <div class="profil" >
+         <img class="foto" src="img/1.jpg" >
+         <p class="p_position" >kochum</p>
+       </div>
+  </div>
+
+  `
+}
+const addlist= document.getElementById("divadd");
+addlist.addEventListener("click", addfoto, true);
+
 

@@ -4,29 +4,34 @@
 .bigdiv{
   background-color: rgba(114, 97, 77, 0.466);
     width: 100%;
-    height: 880px;
+    height: 913px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .leftdiv{
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: brown; */
     width: 24%;
     height: 880px;
 }
 
 .maindiv{
-    background-color: rgb(77, 174, 253);
+    /* background-color: rgb(77, 174, 253); */
     width: 100%;
     height: 880px;
 
 }
 .profil{
+    text-align: center;
 /* background-color: blue; */
     width: 35%;
     height: 12.5%;
-margin-left: 30%;
+/* margin-left: 20%; */
+margin-top: 18px;
 }
 
 .foto{
@@ -38,44 +43,40 @@ border-radius: 100%;
 
 
 
-
-
-
-
-.table2{
-    width: 800px;
-    height: 200px;
-    border:5px solid black;
-
+.bigshablon {
+    padding-left: 10px;
+    background-color:#ccc4b9;
+    width: 98%;
+    border-radius: 15px;
 }
-.table1{
-    border:1px solid black;
 
-}
 
 .waiting{
-    margin-top: 15px;
+    margin-top: 20px;
     width: 90%;
-    height: 110px;
-    /* background-color: red; */
+    height: 100px;
+   
     border-radius: 3%;
 }
 
 .time{
     /* background-color: chartreuse; */
+    margin-top: -100px;
     width: 7%;
     height: 70px;
     margin-left: 100%;
     border-radius: 3%;
+   
 
 }
 .waiting_p{
-position: relative;
-bottom: 70px;
+/* margin-top: 20px; */
+/* bottom: 130px; */
 font-size: 10px;
 
 
 }
+
 .tablediv{
     /* background-color: darkorange; */
     height: 300px;
@@ -106,29 +107,26 @@ height: 50%;
 }
 .input_probel{
     margin-left: 15%;
-    width: 50%;
+    width: 180px;
     border-radius: 20px;
     border: none;
 }
-.p_position{
-font-size: 25px;
 
-}
 .divadd
 {
-    margin-top: -15px;
+    margin-top: 10px;
     margin-left: 89%;
     display: flex;
-    width: 10%;
-    height: 60px;
+    width: 8%;
+    height: 50px;
     /* background-color: yellow; */
 }
 .divaddfoto
 {
-    margin-left: 80%;
+    margin-left: 65%;
     display: flex;
-    margin-top: -50px;
-    width: 20%;
-    height: 60px;
+    margin-top: -60px;
+    width: 8%;
+    height: 50px;
     /* background-color: yellow; */
 }

@@ -5,13 +5,14 @@
             margin-top: -1px;
         
         }
-        .profil{
-          
-            margin-left: 0%;
+        
+            .leftdiv{
+                align-items: flex-start;
+                
             }
+
             
-
-
+                
 
 
 

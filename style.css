@@ -137,3 +137,18 @@ height: 80px;
 font-size: 40px;
 
 }
+
+.addprofil{
+    margin-left: 10px;
+/* background-color: black; */
+flex-direction: column-reverse;
+}
+.addaprofilbig{
+    display: flex;
+width: 80%;
+height: 100px;
+    background-color: red;
+    margin-top: -650px;
+    margin-left: 200px;
+
+}

@@ -48,6 +48,7 @@ border-radius: 100%;
     background-color:#ccc4b9;
     width: 98%;
     border-radius: 15px;
+    height: 140px;
 }
 
 
@@ -69,13 +70,7 @@ border-radius: 100%;
    
 
 }
-.waiting_p{
-/* margin-top: 20px; */
-/* bottom: 130px; */
-font-size: 10px;
 
-
-}
 
 .tablediv{
     /* background-color: darkorange; */

@@ -20,16 +20,16 @@ while (arrfoto_lenght>7) {
 }
 const left = document.getElementById("leftdiv");
 for (let i = 0; i < 7; i++) {
-left.innerHTML += `<div class="profil" >
-<img class="foto" src="img/${arrfoto[i]}.jpg" >
-<p class="p_position" >${arrtext[i]}</p>
+left.innerHTML += `<div class="profil  " >
+<img class="foto  " src="img/${arrfoto[i]}.jpg" >
+<p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
 </div>`;
 }
 
 if (secret_foto>0) {
   left.innerHTML += `
   <div class="divaddfoto" > 
-  <i  class="fa fa-chevron-circle-down" style="font-size:35px;color:red;margin: 5px; "></i>
+  <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
    <H1>${secret_foto}</H1> </div>`
   
   }
@@ -39,7 +39,7 @@ if (secret_foto>0) {
  let secret_question=0
 
 
- while (arrnaem_lenght>4) {
+ while (arrnaem_lenght>3) {
   arrnaem_lenght=arrnaem_lenght-1
   secret_question++
  }
@@ -49,11 +49,11 @@ if (secret_foto>0) {
 for (let i = 0; i < arrnaem_lenght; i++) {
     
     waiting1.innerHTML +=`
-    <div class="bigshablon">
+    <div class="bigshablon ms-depth-16	 ">
       <div class="waiting" >
-      <p class="waiting_p" > հարց N1 - զեկուցող ${arrname[i]}</p>
-      <p class="waiting_p" > Ընդունված է</p>
-      <p class="waiting_p" >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
+      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
@@ -64,11 +64,11 @@ for (let i = 0; i < arrnaem_lenght; i++) {
 }
 if (secret_question>0) {
 waiting1.innerHTML += `
-<button class="divadd" >
-<div id="divadd"  > 
-<i  class="fa fa-chevron-circle-down" style="font-size:35px;color:red;margin: 5px; "></i>
+
+<div class="divadd" id="divadd"  > 
+<i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
 <span class="divadd_span" >${secret_question}</span> </div>
-</button>`
+`
 
 }
 function addfoto() {

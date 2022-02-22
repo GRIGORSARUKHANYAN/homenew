@@ -21,7 +21,15 @@ let arrname = ["Արամ Պողոսյան",8, "Հրայր Դավթյան","Ար�
  const waiting1 = document.getElementById("maindiv");
  const addaprofilbig = document.getElementById("addaprofilbig");
  const delprofil= document.getElementById("delprofil");
- 
+ const addtextbig = document.getElementById("addtextbig");
+ const deltext = document.getElementById("deltext");
+ //  const addaprofilbig = document.getElementById("addaprofilbig");
+
+
+
+
+
+
 function addprofil(params) {
   while (arrfoto_lenght>7) {
   arrfoto_lenght=arrfoto_lenght-1
@@ -82,6 +90,21 @@ function addquestion() {
   <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
   <span class="divadd_span" >${secret_question}</span> </div>`
   }
+  for (let i = 0; i < secret_question; i++) {
+    addtextbig.innerHTML += `
+    <div class="bigshablon ms-depth-16	 ">
+      <div class="waiting" >
+      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
+      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
+          ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+          <div class="time" > <p>8:30</p> <p>9:00</p> </div>
+    </div>
+    </div>`;
+    
+  }
+
 
 }
 addquestion()
@@ -94,10 +117,6 @@ function addfoto() {
   addaprofilbig.style.display="flex"
 }
 
-
-
-
-
 const addlist= document.getElementById("divaddfoto");
 addlist.addEventListener("click", addfoto, true);
 
@@ -105,3 +124,19 @@ function delprof() {
   addaprofilbig.style.display="none"
 }
 addaprofilbig.addEventListener("click", delprof, true)
+
+
+
+
+// // // porcarkum\
+function addtext() {
+  addtextbig.style.display="flex"
+}
+
+const divadd= document.getElementById("divadd");
+divadd.addEventListener("click", addtext, true);
+
+function deltexts() {
+  addtextbig.style.display="none"
+}
+addtextbig.addEventListener("click", deltexts, true)

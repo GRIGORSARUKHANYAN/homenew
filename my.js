@@ -9,7 +9,12 @@
 // provideFluentDesignSystem().register(allComponents);
 
 
-let arrfoto = [1,2,3,4,5,6,7,8,9,10]
+$('.carousel').carousel({
+  interval: 30000
+})
+
+
+let arrfoto = [1,2,3,4,5,6,7,8,9,10,11]
 let arrtext = ["Տնօրեն","Փոխտնորեն","Քարտուղար","Մենեջեր","Ինժիներ","Հաշվապահ",
 " Տեստավորող"]
 let arrfoto_lenght=arrfoto.length
@@ -23,42 +28,100 @@ let arrname = ["Արամ Պողոսյան",8, "Հրայր Դավթյան","Ար�
  const delprofil= document.getElementById("delprofil");
  const addtextbig = document.getElementById("addtextbig");
  const deltext = document.getElementById("deltext");
- //  const addaprofilbig = document.getElementById("addaprofilbig");
 
 
 
 
 
 
-function addprofil(params) {
-  while (arrfoto_lenght>7) {
-  arrfoto_lenght=arrfoto_lenght-1
-  secret_foto ++
-  }
-  for (let i = 0; i < 7; i++) {
-  left.innerHTML += `<div class="profil  " >
-  <img class="foto  " src="img/${arrfoto[i]}.jpg" >
+
+ function addprofil() {
+   while (arrfoto_lenght>7) {
+   arrfoto_lenght=arrfoto_lenght-1
+   secret_foto ++
+   }
+ const carusel1 = document.getElementById("carusel1");
+ const carusel2 = document.getElementById("carusel2");
+
+
+if (secret_foto==0) {
+  
+
+ for (let i = 0; i < 7; i++) {
+  carusel1.innerHTML += `<div class="profil  " >
+  <img class="foto  "src="img/${arrfoto[i]}.jpg" >
   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
   </div>`;
   }
+}else
+if (secret_foto>0) {
 
-  if (secret_foto>0) {
-  left.innerHTML += `
-  <div class="divaddfoto" id="divaddfoto" > 
-  <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
- <H1>${secret_foto}</H1> </div>`
- 
- for (let i = 0; i < secret_foto; i++) {
-  addaprofilbig.innerHTML += `<div class="addprofil"    >
-  <img class="foto  " src="img/${arrfoto[i+7]}.jpg" >
-  <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
-  </div>`;
+
   
+ for (let i = 0; i < 7; i++) {
+  carusel1.innerHTML += `<div class="profil  " >
+  <img class="foto  "src="img/${arrfoto[i]}.jpg" >
+  <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
+  </div>`;
+  }
+  for (let i = 0; i < secret_foto; i++) {
+    carusel2.innerHTML += `<div class="profil  " >
+    <img class="foto  "src="img/${arrfoto[i+7]}.jpg" >
+    <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
+    </div>`;
+    }
+    left.innerHTML += `
+    <div    class="divaddfoto" id="divaddfoto" > 
+    <i class="ms-Icon ms-Icon--AlertSolidIcon  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
+   <H1>${secret_foto}</H1> </div>`
 }
-
  }
-}
-addprofil()
+ addprofil();
+
+
+
+
+
+
+
+
+//   const addaprofilbig = document.getElementById("addaprofilbig");
+// function addprofil(params) {
+//   while (arrfoto_lenght>7) {
+//   arrfoto_lenght=arrfoto_lenght-1
+//   secret_foto ++
+//   }
+//   for (let i = 0; i < 7; i++) {
+//   left.innerHTML += `<div class="profil  " >
+//   <img class="foto  " src="img/${arrfoto[i]}.jpg" >
+//   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
+//   </div>`;
+//   }
+
+//   if (secret_foto>0) {
+//   left.innerHTML += `
+//   <div class="divaddfoto" id="divaddfoto" > 
+//   <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
+//  <H1>${secret_foto}</H1> </div>`
+ 
+//  for (let i = 0; i < secret_foto; i++) {
+//   addaprofilbig.innerHTML += `<div class="addprofil"    >
+//   <img class="foto  " src="img/${arrfoto[i+7]}.jpg" >
+//   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
+//   </div>`;
+  
+// }
+
+//  }
+// }
+// addprofil()
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +181,7 @@ function addfoto() {
 }
 
 const addlist= document.getElementById("divaddfoto");
-addlist.addEventListener("click", addfoto, true);
+// addlist.addEventListener("click", addfoto, true);
 
 function delprof() {
   addaprofilbig.style.display="none"

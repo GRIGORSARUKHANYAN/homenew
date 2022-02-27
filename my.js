@@ -81,6 +81,107 @@ if (secret_foto>0) {
 
 
 
+ const carusel5 = document.getElementById("carusel5");
+ const carusel6 = document.getElementById("carusel6");
+
+ 
+function addquestion() {
+  while (arrnaem_lenght>3) {
+  arrnaem_lenght=arrnaem_lenght-1
+  secret_question++
+  }
+ 
+  for (let i = 0; i < arrnaem_lenght; i++) {
+    
+    carusel5.innerHTML +=`
+    <div class="bigshablon ms-depth-16	 ">
+      <div class="waiting" >
+      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
+      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
+          ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+          <div class="time" > <p>8:30</p> <p>9:00</p> </div>
+    </div>
+    </div>`
+    }
+  // if (secret_question>0) {
+  // waiting1.innerHTML += `
+  // <div class="divadd" id="divadd"  > 
+  // <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
+  // <span class="divadd_span" >${secret_question}</span> </div>`
+  // }
+  for (let i = 0; i < secret_question; i++) {
+    carusel6.innerHTML += `
+    <div class="bigshablon ms-depth-16	 ">
+      <div class="waiting" >
+      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
+      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
+          ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+          <div class="time" > <p>8:30</p> <p>9:00</p> </div>
+    </div>
+    </div>`;
+    
+  }
+
+
+}
+addquestion()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,50 +228,63 @@ if (secret_foto>0) {
 
  
 
-function addquestion() {
-  while (arrnaem_lenght>3) {
-  arrnaem_lenght=arrnaem_lenght-1
-  secret_question++
-  }
+// function addquestion() {
+//   while (arrnaem_lenght>3) {
+//   arrnaem_lenght=arrnaem_lenght-1
+//   secret_question++
+//   }
  
-  for (let i = 0; i < arrnaem_lenght; i++) {
+//   for (let i = 0; i < arrnaem_lenght; i++) {
     
-    waiting1.innerHTML +=`
-    <div class="bigshablon ms-depth-16	 ">
-      <div class="waiting" >
-      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
-      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
-        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
-          ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
-          <div class="time" > <p>8:30</p> <p>9:00</p> </div>
-    </div>
-    </div>`
-    }
-  if (secret_question>0) {
-  waiting1.innerHTML += `
-  <div class="divadd" id="divadd"  > 
-  <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
-  <span class="divadd_span" >${secret_question}</span> </div>`
-  }
-  for (let i = 0; i < secret_question; i++) {
-    addtextbig.innerHTML += `
-    <div class="bigshablon ms-depth-16	 ">
-      <div class="waiting" >
-      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
-      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
-        ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
-          ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
-          <div class="time" > <p>8:30</p> <p>9:00</p> </div>
-    </div>
-    </div>`;
+//     waiting1.innerHTML +=`
+//     <div class="bigshablon ms-depth-16	 ">
+//       <div class="waiting" >
+//       <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
+//       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+//       <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+//         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
+//           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+//           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
+//     </div>
+//     </div>`
+//     }
+//   if (secret_question>0) {
+//   waiting1.innerHTML += `
+//   <div class="divadd" id="divadd"  > 
+//   <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
+//   <span class="divadd_span" >${secret_question}</span> </div>`
+//   }
+//   for (let i = 0; i < secret_question; i++) {
+//     addtextbig.innerHTML += `
+//     <div class="bigshablon ms-depth-16	 ">
+//       <div class="waiting" >
+//       <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
+//       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
+//       <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+//         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
+//           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+//           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
+//     </div>
+//     </div>`;
     
-  }
+//   }
 
 
-}
-addquestion()
+// }
+// addquestion()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

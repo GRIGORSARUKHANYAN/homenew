@@ -73,9 +73,11 @@ border-radius: 100%;
 
 
 .tablediv{
+    
     /* background-color: darkorange; */
     height: 300px;
     width: 100%;
+    
 
 }
 .datatime{
@@ -129,7 +131,7 @@ height: 50%;
 
     margin-top: -770px;
     margin-left: 50%;
-background-color: rgb(119, 110, 122);
+/* background-color: rgb(119, 110, 122); */
 width: 80px;
 height: 80px;
 }
@@ -159,7 +161,7 @@ flex-direction: column;
     /* position: relative; */
 width: 79%;
 height: 100%;
-    background-color: rgb(#CCC4B9);
+    /* background-color: rgb(#CCC4B9); */
     margin-top: -50%;
     margin-left: 20%;
 
@@ -218,4 +220,9 @@ height: 100%;
 
 .carouse2{
     display: none;
+}
+
+.title1{
+
+    margin-left: 30%;
 }

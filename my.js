@@ -28,8 +28,9 @@ let arrname = ["Արամ Պողոսյան",8, "Հրայր Դավթյան","Ար�
  const delprofil= document.getElementById("delprofil");
  const addtextbig = document.getElementById("addtextbig");
  const deltext = document.getElementById("deltext");
-
-
+ const divadd= document.getElementById("divadd");
+ const addlist= document.getElementById("divaddfoto");
+ const  addsecret= document.getElementById("addsecret");
 
 
 
@@ -70,9 +71,8 @@ if (secret_foto>0) {
     <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
     </div>`;
     }
-    left.innerHTML += `
-    <div    class="divaddfoto" id="divaddfoto" > 
-    <i class="ms-Icon ms-Icon--AlertSolidIcon  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
+    addlist.innerHTML += `
+  
    <H1>${secret_foto}</H1> </div>`
 }
  }
@@ -84,7 +84,8 @@ if (secret_foto>0) {
  const carusel5 = document.getElementById("carusel5");
  const carusel6 = document.getElementById("carusel6");
 
- 
+   
+
 function addquestion() {
   while (arrnaem_lenght>3) {
   arrnaem_lenght=arrnaem_lenght-1
@@ -105,12 +106,12 @@ function addquestion() {
     </div>
     </div>`
     }
-  // if (secret_question>0) {
-  // waiting1.innerHTML += `
-  // <div class="divadd" id="divadd"  > 
-  // <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
-  // <span class="divadd_span" >${secret_question}</span> </div>`
-  // }
+   if(secret_question>0){
+
+
+  
+
+  
   for (let i = 0; i < secret_question; i++) {
     carusel6.innerHTML += `
     <div class="bigshablon ms-depth-16	 ">
@@ -124,7 +125,16 @@ function addquestion() {
     </div>
     </div>`;
     
+
   }
+
+  addsecret.innerHTML += `
+  <h1  >${secret_question}</h1> `  
+
+  
+
+}
+
 
 
 }
@@ -294,7 +304,7 @@ function addfoto() {
   addaprofilbig.style.display="flex"
 }
 
-const addlist= document.getElementById("divaddfoto");
+
 // addlist.addEventListener("click", addfoto, true);
 
 function delprof() {
@@ -310,7 +320,7 @@ function addtext() {
   addtextbig.style.display="flex"
 }
 
-const divadd= document.getElementById("divadd");
+
 divadd.addEventListener("click", addtext, true);
 
 function deltexts() {

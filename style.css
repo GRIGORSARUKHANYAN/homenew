@@ -32,6 +32,7 @@
     height: 12.5%;
 /* margin-left: 20%; */
 margin-top: 18px;
+margin-left: 25%;
 }
 
 .foto{
@@ -227,3 +228,15 @@ height: 100%;
     margin-left: 30%;
 }
 
+
+
+
+
+.bigshablon:hover {
+    transform: rotate(0) scale(1.09);
+margin-left: 35px;
+}
+.profil:hover {
+    transform: rotate(0) scale(1.09);
+/* margin-left: 35px; */
+}

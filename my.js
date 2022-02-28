@@ -95,7 +95,7 @@ function addquestion() {
   for (let i = 0; i < arrnaem_lenght; i++) {
     
     carusel5.innerHTML +=`
-    <div class="bigshablon ms-depth-16	 ">
+    <div class="bigshablon ms-depth-16" id="bigshablon" >
       <div class="waiting" >
       <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
@@ -316,14 +316,22 @@ addaprofilbig.addEventListener("click", delprof, true)
 
 
 // // // porcarkum\
-function addtext() {
-  addtextbig.style.display="flex"
-}
 
-
-divadd.addEventListener("click", addtext, true);
 
 function deltexts() {
   addtextbig.style.display="none"
 }
 addtextbig.addEventListener("click", deltexts, true)
+
+
+
+
+
+
+
+
+const  bigshablon= document.getElementById("bigshablon");
+function bigshablon1() {
+  bigshablon.style.display="none"
+}
+bigshablon.addEventListener("click", bigshablon1, true)

@@ -2,7 +2,7 @@
 
 
 .bigdiv{
-  background-color: rgba(114, 97, 77, 0.466);
+  background-color:#D8D8D8;
     width: 100%;
     height: 913px;
     display: flex;
@@ -46,7 +46,7 @@ border-radius: 100%;
 
 .bigshablon {
     padding-left: 10px;
-    background-color:#ccc4b9;
+    background-color:#9999996b;
     width: 98%;
     border-radius: 15px;
     height: 140px;
@@ -240,3 +240,7 @@ margin-left: 35px;
     transform: rotate(0) scale(1.09);
 /* margin-left: 35px; */
 }
+
+
+
+

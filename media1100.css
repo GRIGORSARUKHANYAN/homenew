@@ -14,7 +14,29 @@
             
         
           .waiting_p{
-font-size: 10px; }        
+font-size: 10px; }     
+
+.mobile{
+    font-size: 10px;
+}
+.mobile1{
+    font-size: 12px;
+}
+
+.input_probel{
+
+    /* width: 80px; */
+    height: 40px;
+
+}
+.title1{
+font-size: 20px;
+
+}
+
+
+
+
         }
 
 

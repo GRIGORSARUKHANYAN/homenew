@@ -65,10 +65,11 @@ if (secret_foto>0) {
   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
   </div>`;
   }
-  for (let i = 0; i < secret_foto; i++) {
+  let l=7-secret_foto+1
+  for (let i = 0; i < 7; i++) {
     carusel2.innerHTML += `<div class="profil  " >
-    <img class="foto  "src="img/${arrfoto[i+7]}.jpg" >
-    <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
+    <img class="foto  "src="img/${arrfoto[i+l]}.jpg" >
+    <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+l]}</p>
     </div>`;
     }
     addlist.innerHTML += `
@@ -106,12 +107,11 @@ function addquestion() {
     </div>
     </div>`
     }
-   if(secret_question>0){
 
 
-  
 
-  
+   if(secret_question>0  ){
+
   for (let i = 0; i < secret_question; i++) {
     carusel6.innerHTML += `
     <div class="bigshablon ms-depth-16	 ">
@@ -141,171 +141,12 @@ function addquestion() {
 addquestion()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   const addaprofilbig = document.getElementById("addaprofilbig");
-// function addprofil(params) {
-//   while (arrfoto_lenght>7) {
-//   arrfoto_lenght=arrfoto_lenght-1
-//   secret_foto ++
-//   }
-//   for (let i = 0; i < 7; i++) {
-//   left.innerHTML += `<div class="profil  " >
-//   <img class="foto  " src="img/${arrfoto[i]}.jpg" >
-//   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i]}</p>
-//   </div>`;
-//   }
-
-//   if (secret_foto>0) {
-//   left.innerHTML += `
-//   <div class="divaddfoto" id="divaddfoto" > 
-//   <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
-//  <H1>${secret_foto}</H1> </div>`
- 
-//  for (let i = 0; i < secret_foto; i++) {
-//   addaprofilbig.innerHTML += `<div class="addprofil"    >
-//   <img class="foto  " src="img/${arrfoto[i+7]}.jpg" >
-//   <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+7]}</p>
-//   </div>`;
-  
-// }
-
-//  }
-// }
-// addprofil()
-
-
-
-
-
-
-
-
-
-
- 
-
-// function addquestion() {
-//   while (arrnaem_lenght>3) {
-//   arrnaem_lenght=arrnaem_lenght-1
-//   secret_question++
-//   }
- 
-//   for (let i = 0; i < arrnaem_lenght; i++) {
-    
-//     waiting1.innerHTML +=`
-//     <div class="bigshablon ms-depth-16	 ">
-//       <div class="waiting" >
-//       <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
-//       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-//       <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
-//         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
-//           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
-//           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
-//     </div>
-//     </div>`
-//     }
-//   if (secret_question>0) {
-//   waiting1.innerHTML += `
-//   <div class="divadd" id="divadd"  > 
-//   <i class="ms-Icon ms-Icon--DoubleChevronDown12  " aria-hidden="true" style="font-size:35px;color:neutralTertiaryAlt;margin: 5px; "></i>
-//   <span class="divadd_span" >${secret_question}</span> </div>`
-//   }
-//   for (let i = 0; i < secret_question; i++) {
-//     addtextbig.innerHTML += `
-//     <div class="bigshablon ms-depth-16	 ">
-//       <div class="waiting" >
-//       <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
-//       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-//       <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
-//         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
-//           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
-//           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
-//     </div>
-//     </div>`;
-    
-//   }
-
-
-// }
-// addquestion()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// porcarkum\
 function addfoto() {
   addaprofilbig.style.display="flex"
 }
 
 
-// addlist.addEventListener("click", addfoto, true);
+
 
 function delprof() {
   addaprofilbig.style.display="none"
@@ -318,20 +159,9 @@ addaprofilbig.addEventListener("click", delprof, true)
 // // // porcarkum\
 
 
-function deltexts() {
-  addtextbig.style.display="none"
-}
-addtextbig.addEventListener("click", deltexts, true)
 
-
-
-
-
-
-
-
-const  bigshablon= document.getElementById("bigshablon");
-function bigshablon1() {
-  bigshablon.style.display="none"
-}
-bigshablon.addEventListener("click", bigshablon1, true)
+// const  bigshablon= document.getElementById("bigshablon");
+// function bigshablon1() {
+//   bigshablon.style.width="500"
+// }
+// bigshablon.addEventListener("click", bigshablon1, true)

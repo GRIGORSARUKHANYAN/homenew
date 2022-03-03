@@ -13,8 +13,10 @@
 
             
         
-          .waiting_p{
-font-size: 10px; }     
+         
+.waiting_p1{
+ font-size: 14px;
+}
 
 .mobile{
     font-size: 10px;
@@ -33,7 +35,9 @@ font-size: 10px; }
 font-size: 20px;
 
 }
-
+.logo{
+    margin-left: 90%;
+}
 
 
 

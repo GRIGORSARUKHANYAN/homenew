@@ -73,9 +73,9 @@ if (secret_foto>0) {
     <p class="p_position ms-depth-16 ms-fontSize-14 " >${arrtext[i+l]}</p>
     </div>`;
     }
-    addlist.innerHTML += `
+  //   addlist.innerHTML += `
   
-   <H1>${secret_foto}</H1> </div>`
+  //  <H1>${secret_foto}</H1> </div>`
 }
  }
  addprofil();
@@ -117,9 +117,9 @@ function addquestion() {
     carusel6.innerHTML += `
     <div class="bigshablon${i} ms-depth-16	 ">
       <div class="waiting" >
-      <p class="waiting_p ms-fontSize-14 " > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
-      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class="waiting_p${i} ms-fontSize-14 " > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
+      <p class="waiting_p${i} ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p${i} ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
@@ -136,8 +136,8 @@ function addquestion() {
 
   }
 
-  addsecret.innerHTML += `
-  <h1  >${secret_question}</h1> `  
+  // addsecret.innerHTML += `
+  // <h1  >${secret_question}</h1> `  
 
   
 

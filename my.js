@@ -17,6 +17,7 @@ $('.carousel').carousel({
 let arrfoto = [1,2,3,4,5,6,7,8,9,10,11]
 let arrtext = ["Տնօրեն","Փոխտնորեն","Քարտուղար","Մենեջեր","Ինժիներ","Հաշվապահ",
 " Տեստավորող"]
+let arrzekucox = [1,2,3,4,5]
 let arrfoto_lenght=arrfoto.length
 let secret_foto = 0
 const left = document.getElementById("leftdiv");
@@ -92,15 +93,15 @@ function addquestion() {
   arrnaem_lenght=arrnaem_lenght-1
   secret_question++
   }
- 
+ let clasv=1
   for (let i = 0; i < arrnaem_lenght; i++) {
     
     carusel5.innerHTML +=`
-    <div class="bigshablon ms-depth-16" id="bigshablon" >
+    <div class="bigshablon${i} ms-depth-16" id="bigshablon" >
       <div class="waiting" >
-      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]}</p>
-      <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class="waiting_p${i} ms-fontSize-14 " > հարց N${arrzekucox[i]} - զեկուցող ${arrname[i]}</p>
+      <p class="waiting_p${i} ms-fontSize-14 " > Ընդունված է</p>
+      <p class="waiting_p${i} ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
@@ -111,12 +112,12 @@ function addquestion() {
 
 
    if(secret_question>0  ){
-
-  for (let i = 0; i < secret_question; i++) {
+    let s=3-secret_question+1
+  for (let i = 0; i < 3; i++) {
     carusel6.innerHTML += `
-    <div class="bigshablon ms-depth-16	 ">
+    <div class="bigshablon${i} ms-depth-16	 ">
       <div class="waiting" >
-      <p class="waiting_p ms-fontSize-14 " > հարց N1 - զեկուցող ${arrname[i]+3}</p>
+      <p class="waiting_p ms-fontSize-14 " > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
       <p class="waiting_p ms-fontSize-14 " > Ընդունված է</p>
       <p class="waiting_p ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
@@ -124,6 +125,13 @@ function addquestion() {
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
     </div>
     </div>`;
+ 
+
+
+//  const  bigshablon= document.getElementById("bigshablon");
+
+//    bigshablon.style.backgroundColor="red"
+
     
 
   }

@@ -97,11 +97,11 @@ function addquestion() {
   for (let i = 0; i < arrnaem_lenght; i++) {
     
     carusel5.innerHTML +=`
-    <div class="bigshablon${i} ms-depth-16" id="bigshablon" >
+    <div class="bigshablon${i} ms-depth-16" id="bigshablon${i}" >
       <div class="waiting" >
-      <p class="waiting_p${i} ms-fontSize-14 " > հարց N${arrzekucox[i]} - զեկուցող ${arrname[i]}</p>
-      <p class="waiting_p${i} ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p${i} ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class="  ms-fontSize-14 "   > հարց N${arrzekucox[i]} - զեկուցող ${arrname[i]}</p>
+      <p class="  ms-fontSize-14 "  > Ընդունված է</p>
+      <p class="  ms-fontSize-12 "  >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
@@ -110,16 +110,57 @@ function addquestion() {
     }
 
 
+  function active1() {
+
+
+
+    
+  let bigshablon0=document.getElementById("bigshablon0");
+  bigshablon0.setAttribute("class", "bigshablon1");
+  let bigshablon1=document.getElementById("bigshablon1");
+  bigshablon1.setAttribute("class", "bigshablon0");
+}
+setTimeout(active1, 2000);
+function active2() {
+  let bigshablon0=document.getElementById("bigshablon1");
+  bigshablon0.setAttribute("class", "bigshablon1");
+  let bigshablon1=document.getElementById("bigshablon2");
+  bigshablon1.setAttribute("class", "bigshablon0");
+ }
+ setTimeout(active2, 3000);
+ function active3() {
+  let bigshablon0=document.getElementById("bigshablon2");
+  bigshablon0.setAttribute("class", "bigshablon1");
+  let bigshablon1=document.getElementById("bigshablon3");
+  bigshablon1.setAttribute("class", "bigshablon0");
+ }
+ setTimeout(active3, 4000);
+
+ function active4() {
+  let bigshablon0=document.getElementById("bigshablon3");
+  bigshablon0.setAttribute("class", "bigshablon1");
+  let bigshablon1=document.getElementById("bigshablon4");
+  bigshablon1.setAttribute("class", "bigshablon0");
+ }
+ setTimeout(active4, 5000);
+
+
+
+
+
+
 
    if(secret_question>0  ){
     let s=3-secret_question+1
+  
   for (let i = 0; i < 3; i++) {
+  
     carusel6.innerHTML += `
-    <div class="bigshablon${i} ms-depth-16	 ">
+    <div class=" bigshablon${i+2} ms-depth-16	 " id="bigshablon${i+2}" >
       <div class="waiting" >
-      <p class="waiting_p${i} ms-fontSize-14 " > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
-      <p class="waiting_p${i} ms-fontSize-14 " > Ընդունված է</p>
-      <p class="waiting_p${i} ms-fontSize-12 " >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class=" ms-fontSize-14 "   > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
+      <p class=" ms-fontSize-14 "  > Ընդունված է</p>
+      <p class=" ms-fontSize-12 "   >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
@@ -167,9 +208,3 @@ addaprofilbig.addEventListener("click", delprof, true)
 // // // porcarkum\
 
 
-
-// const  bigshablon= document.getElementById("bigshablon");
-// function bigshablon1() {
-//   bigshablon.style.width="500"
-// }
-// bigshablon.addEventListener("click", bigshablon1, true)

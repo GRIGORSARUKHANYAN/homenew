@@ -120,14 +120,14 @@ function addquestion() {
   let bigshablon1=document.getElementById("bigshablon1");
   bigshablon1.setAttribute("class", "bigshablon0");
 }
-setTimeout(active1, 2000);
+setTimeout(active1,2* 2000);
 function active2() {
   let bigshablon0=document.getElementById("bigshablon1");
   bigshablon0.setAttribute("class", "bigshablon1");
   let bigshablon1=document.getElementById("bigshablon2");
   bigshablon1.setAttribute("class", "bigshablon0");
  }
- setTimeout(active2, 3000);
+ setTimeout(active2,2* 3000);
  function active3() {
   let bigshablon0=document.getElementById("bigshablon2");
   bigshablon0.setAttribute("class", "bigshablon1");

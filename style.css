@@ -133,6 +133,7 @@ left: 200px;}
     display: flex;
     width: 10%;
     height: 50px;
+    
     /* background-color: yellow; */
 }
 .divaddfoto
@@ -259,11 +260,13 @@ margin-left: 35px;
 
 
 .bigshablon0 {
+    /* transform: scale(1.5); */
+    zoom: 140%;
     padding-left: 10px;
     background-color:#6f5d3269;
     width: 98%;
     border-radius: 15px;
-    height: 190px;
+    height: 130px;
     font-size: 30px;
 }
 

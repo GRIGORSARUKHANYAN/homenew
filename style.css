@@ -133,7 +133,10 @@ left: 200px;}
     display: flex;
     width: 10%;
     height: 50px;
-    
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    right: 0;
     /* background-color: yellow; */
 }
 .divaddfoto
@@ -301,6 +304,13 @@ margin-left: 35px;
     height: 140px;
 }
 .bigshablon4 {
+    padding-left: 10px;
+    background-color:#9999996b;
+    width: 98%;
+    border-radius: 15px;
+    height: 140px;
+}
+.bigshablon5 {
     padding-left: 10px;
     background-color:#9999996b;
     width: 98%;

@@ -111,10 +111,6 @@ function addquestion() {
 
 
   function active1() {
-
-
-
-    
   let bigshablon0=document.getElementById("bigshablon0");
   bigshablon0.setAttribute("class", "bigshablon1");
   let bigshablon1=document.getElementById("bigshablon1");
@@ -134,15 +130,24 @@ function active2() {
   let bigshablon1=document.getElementById("bigshablon3");
   bigshablon1.setAttribute("class", "bigshablon0");
  }
- setTimeout(active3, 4000);
+ setTimeout(active3, 2*4000);
 
  function active4() {
+   
   let bigshablon0=document.getElementById("bigshablon3");
   bigshablon0.setAttribute("class", "bigshablon1");
   let bigshablon1=document.getElementById("bigshablon4");
   bigshablon1.setAttribute("class", "bigshablon0");
  }
- setTimeout(active4, 5000);
+ setTimeout(active4,2* 5000);
+ 
+ function active5() {
+  let bigshablon0=document.getElementById("bigshablon4");
+  bigshablon0.setAttribute("class", "bigshablon1");
+  let bigshablon1=document.getElementById("bigshablon5");
+  bigshablon1.setAttribute("class", "bigshablon0");
+ }
+ setTimeout(active5, 2*8000);
 
 
 
@@ -156,7 +161,7 @@ function active2() {
   for (let i = 0; i < 3; i++) {
   
     carusel6.innerHTML += `
-    <div class=" bigshablon${i+2} ms-depth-16	 " id="bigshablon${i+2}" >
+    <div class=" bigshablon${i+3} ms-depth-16	 " id="bigshablon${i+3}" >
       <div class="waiting" >
       <p class=" ms-fontSize-14 "   > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
       <p class=" ms-fontSize-14 "  > Ընդունված է</p>
@@ -190,17 +195,6 @@ function active2() {
 addquestion()
 
 
-function addfoto() {
-  addaprofilbig.style.display="flex"
-}
-
-
-
-
-function delprof() {
-  addaprofilbig.style.display="none"
-}
-addaprofilbig.addEventListener("click", delprof, true)
 
 
 

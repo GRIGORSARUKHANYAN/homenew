@@ -10,7 +10,7 @@
 
 
 $('.carousel').carousel({
-  interval: 30000
+  interval: 3000
 })
 
 
@@ -99,11 +99,13 @@ function addquestion() {
     carusel5.innerHTML +=`
     <div class="bigshablon${i} ms-depth-16" id="bigshablon${i}" >
       <div class="waiting" >
-      <p class="  ms-fontSize-14 "   > հարց N${arrzekucox[i]} - զեկուցող ${arrname[i]}</p>
-      <p class="  ms-fontSize-14 "  > Ընդունված է</p>
-      <p class="  ms-fontSize-12 "  >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class=" waiting_p1  ms-fontSize-14 " style="font-weight: bold;"  > հարց N${arrzekucox[i]} </p>
+      <p class="  waiting_p1 ms-fontSize-14 "  > Ընդունված է</p>
+      <p class="  waiting_p1 ms-fontSize-10 "  >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+          <p class=" waiting_p1  ms-fontSize-14 "  > զեկուցող ${arrname[i]}</p>
+          <p class=" waiting_p1  ms-fontSize-14 "  > Հյուրեր </p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
     </div>
     </div>`
@@ -163,11 +165,13 @@ function active2() {
     carusel6.innerHTML += `
     <div class=" bigshablon${i+3} ms-depth-16	 " id="bigshablon${i+3}" >
       <div class="waiting" >
-      <p class=" ms-fontSize-14 "   > հարց N${arrzekucox[i]+s} - զեկուցող ${arrname[i]+s}</p>
-      <p class=" ms-fontSize-14 "  > Ընդունված է</p>
-      <p class=" ms-fontSize-12 "   >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
+      <p class=" waiting_p1  ms-fontSize-14 " style="font-weight: bold;"  > հարց N${arrzekucox[i]+s} </p>
+      <p class="  waiting_p1 ms-fontSize-14 "  > Ընդունված է</p>
+      <p class="  waiting_p1 ms-fontSize-10 "  >    «ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ԴՐԱՄԱՆԻՇԵՐԻ ՎՃԱՐՈՒՆԱԿՈՒԹՅԱՆ,
         ՀՆԱՄԱՇՈՒԹՅԱՆ ՀԱՏԿԱՆԻՇՆԵՐԸ: ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅԱՆ ՏԱՐԱԾՔՈՒՄ ԳՈՐԾՈՂ  ԲԱՆԿԵՐՈՒՄ 
           ԿԱՆԽԻԿ ԴՐԱՄՈՎ ԿԱՏԱՐՎՈՂ ԳՈՐԾԱՌՆՈՒԹՅՈՒՆՆԵՐԸ» ԿԱՆՈՆԱԿԱՐԳ 9-Ը ՀԱՍՏԱՏԵԼՈՒ ՄԱՍԻՆ</p>
+          <p class=" waiting_p1  ms-fontSize-14 "  > զեկուցող ${arrname[i]+s}</p>
+          <p class=" waiting_p1  ms-fontSize-14 "  > Հյուրեր </p>
           <div class="time" > <p>8:30</p> <p>9:00</p> </div>
     </div>
     </div>`;

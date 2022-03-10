@@ -16,9 +16,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: brown; */
-    width: 24%;
-    height: 880px;
+    background-color:#F6F6F6;
+        width: 24%;
+    height: 100%;
+
 }
 
 .maindiv{
@@ -69,9 +70,10 @@ border-radius: 100%;
 
 
 .tablediv{
-    
+    padding: 0px;
+    margin-top: -14px;
     /* background-color: darkorange; */
-    height: 300px;
+    height: 340px;
     width: 100%;
     
 
@@ -80,7 +82,7 @@ border-radius: 100%;
 
 .datatime1{
 display: flex;
-height: 42%;
+height: 40%;
 margin-left: 20px;
 
 }
@@ -119,7 +121,7 @@ left: 200px;}
 
 .divadd1
 {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-left: 89%;
     display: flex;
     width: 10%;
@@ -331,21 +333,22 @@ margin-left: 35px;
     width: 90%;
     height: 100px;
     border-radius: 3%;
+    
 }
 
-/* 
-.waiting_p0{
- font-size: 18px;
+
+.waiting_p1{
+ margin-top: -10px;
  
-} */
+} 
 
 .logo{
 margin-left: 93%;}
 
-.bigtitle{
-margin-top: -5%;
+/* .bigtitle{
+margin-top: -0.5%;
 
-}
+} */
 
 .inputdiv{
     margin-left: 20px;

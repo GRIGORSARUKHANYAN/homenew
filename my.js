@@ -76,7 +76,7 @@ if (secret_foto>0) {
   //   addlist.innerHTML += `
   
   //  <H1>${secret_foto}</H1> </div>`
-}
+ }
  }
  addprofil();
 
@@ -178,16 +178,8 @@ function active2() {
  
 
 
-//  const  bigshablon= document.getElementById("bigshablon");
-
-//    bigshablon.style.backgroundColor="red"
-
-    
-
   }
 
-  // addsecret.innerHTML += `
-  // <h1  >${secret_question}</h1> `  
 
   
 
